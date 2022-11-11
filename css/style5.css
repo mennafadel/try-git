@@ -1,0 +1,241 @@
+*{
+    margin: 0; padding: 0; box-sizing: border-box;
+}
+body{
+    font-family: "pt-sans",sans-serif;
+}
+.container{
+    width: 90%; margin: auto; 
+}
+a{
+    text-decoration: none;
+}
+h2{
+    margin-top: 30px; font-size: 30px; text-align: center;
+}
+.line{
+    width: 70px; height: 2px; background-color: rgb(114, 58, 32); margin: 5px auto 40px auto; transition: 0.5s;
+}
+.title:hover .line{
+    width: 200px;
+}
+.header{
+    width: 100%; height: 80px; background-color:rgb(233, 217, 216);
+    display: flex; justify-content: space-between; align-items: center; font-family: normal;
+}
+.div-nav{
+   width: 700px; height: 80px; 
+}
+.nav{
+    margin: 50px 5px; text-align: center;
+}
+.nav>li{
+    display: inline-block; margin-left: 10px; position: relative;
+    border-right: 2px solid rgba(160, 82, 45,0); 
+    border-left: 2px solid rgba(160, 82, 45,0);
+    transition: padding .3s;  padding: 5px 7px;
+}
+.nav>li:hover{
+    outline: none; border-color:  rgba(160, 82, 45,1); 
+}
+.nav>li::after{
+    position: absolute; top: 0; left: 0; right: 0; max-width: 0; bottom: 0; 
+    opacity: 0; border-top: 2px solid sienna; border-bottom: 2px solid sienna; content: attr(data-text);
+    transition: max-width .3s;
+}
+.nav>li:hover::after{
+    max-width: 100%; opacity: 1; transition-delay: 0.1s;
+}
+.dropdown-li>a , .navli a{
+    display: inline-block;
+    text-decoration: none; color: black; font-size: 20px; font-weight: bold;
+}
+.dropdown-li{
+    display: inline-block; position: relative; 
+}
+.dropdown-menu{
+    position: absolute; width: 430px; border: none; background-color: #fff; padding: 15px; margin-top: 15px;
+    transform: scale(0); transition: transform 0.5s , visibility .5s; opacity: 0;visibility: hidden;
+}
+.dropdown-li:hover .dropdown-menu{
+    visibility: visible; opacity: 1; transform: scale(1);
+}
+.table-ul{
+    float: left; text-align: center;
+}
+.table-li1{
+    font-size: 20px; font-weight: bold; text-decoration-style:dotted; color:rgb(177, 135, 131);
+    margin: 10px 40px 0px 0px;
+}
+.table-ul li{
+    display: block; padding: 5px 17px; 
+}
+.table-ul li a{
+    font-size: 19px; text-decoration: none; color:rgb(153, 117, 114);
+}
+.div-icons1{
+    width: 300px; height: 80px; text-align: center;
+}
+.div-icons1 a{
+    color: black;
+}
+.div-icons1 i , .div-icons1 span{
+    font-size: 20px; margin: 30px 8px; 
+}
+.img-main{
+    width: 100%; margin-top: 20px;
+}
+.parent2{
+    display: flex; flex-direction: row; justify-content: space-around; align-items: flex-start;
+}
+.divp2{
+    width: 280px; height: 350px; 
+}
+.divp2 img{
+    width: 280px; height: 280px;
+}
+.info2{
+    width: 100%; height: 60px; margin-top: 10px; font-size: 19px; position: relative;
+}
+.info2 span{
+    font-weight: bold; padding-right: 20px; font-size: 20px;
+}
+.i2{
+    width: 30px; height: 30px; background-color: brown; color: whitesmoke; text-align: center;
+    padding-top: 5px; position: absolute; transition: 0.5s; opacity: 0; visibility: hidden;
+}
+.divp2:hover .i2{
+    visibility: visible; opacity: 1;
+}
+.parent22{
+    display: grid; grid-template-columns: 50% 25% 25%; grid-gap: 3px; width: 100%; margin-top: 20px;
+}
+.divbp22{
+    margin-right: 5px; height: 300px; background-color: rgb(238, 226, 223); position: relative;
+}
+.divbp22 i{
+    font-size: 60px; color: rgb(187, 143, 140); margin: 10px 10px; position: absolute;
+}
+.divbp22 h3{
+    margin: 15px auto 0px 80px; font-size: 25px; font-weight: bold;
+}
+.divbp22 span{
+    margin-left: 80px
+}
+.divbp22 p{
+    font-size: 17px; line-height: 30px; padding: 20px 20px;
+}
+.divsp22{
+    height: 300px; margin: 0px 5px; position: relative; transition: 0.5s;
+}
+.divsp22 img{
+    width: 100%; height: 100%; display: inline; position: absolute;
+}
+.info22{
+    position: absolute; margin: 20px 10px; line-height: 30px; font-size: larger;
+}
+.divsp22:hover{
+    transform: scale(1.1);
+}
+.parent32{
+    display: flex; flex-direction: row; justify-content: space-between; align-items: center; 
+    margin-bottom: 60px; margin-top: 20px;
+}
+.div32{
+    flex: 1; text-align: center; border-right: 1px solid brown; 
+}
+.icon32{
+    background-image: url(../images/service-icon.png); height: 60px; background-repeat: no-repeat;
+}
+.icon-1{
+    background-position: center 5px;
+    transition: all .5s;
+}
+.div32:hover .icon-1{
+    background-position: center -86px;
+}
+.icon-2{
+    background-position: center -180px;
+    transition: all .5s;
+}
+.div32:hover .icon-2{
+    background-position: center -273px;
+}
+.icon-3{
+    background-position: center -366px;
+    transition: all .5s;
+}
+.div32:hover .icon-3{
+    background-position: center -455px;
+}
+.icon-4{
+    background-position: center -550px;
+    transition: all .5s;
+}
+.div32:hover .icon-4{
+    background-position: center -640px;
+}
+.icon-5{
+    background-position: center -735px;
+    transition: all .5s;
+}
+.div32:hover .icon-5{
+    background-position: center -826px;
+}
+.div32:last-child{
+    border: 0;
+}
+.div32 h3{
+    font-size: 17px;
+}
+.div32 span{
+    font-size: 15px; color: gray;
+}
+.parent4{
+    display: grid; grid-template-columns: repeat(3,1fr); grid-template-rows: repeat(3,1fr);
+}
+.prod-ul{
+    width: 600px; list-style: none;  font-size: 18px; margin: 0px auto auto 300px;
+}
+.prod-ul li{
+    display: inline; margin: 20px;
+}
+.prod-ul a{
+    color: black; 
+}
+.prod{
+    height: 450px;  margin: 30px 20px;
+}
+.prod-img{
+    position: relative;
+}
+.prod-img img{
+    width: 100%; height: 380px; display: inline;
+}
+.chair-back{
+    position: absolute; left: 0; top: 0; right: 0; bottom: 0; opacity: 0; 
+    transition: 0.3s; transform: scalex(0); 
+}
+.prod:hover .chair-back{
+    opacity: 1; transform: scalex(1);
+}
+.chair-back ul{
+    position: absolute; list-style: none; font-size: 20px; color: black; 
+    top: 50%; left: 50%; transform: translate(-50%,-50%);
+}
+.chair-back ul li{
+    display: inline-block; width: 40px; height: 40px; background-color: rgb(212, 183, 181);
+    text-align: center; line-height: 40px;
+}
+.prod-info{
+    height: 70px;
+}
+.prod-info i{
+    color: rgb(224, 224, 1); padding: 3px;
+}
+.prod-info p{
+    font-size: 18px; padding: 3px;
+}
+.prod-info span{
+   font-size: 18px; font-weight: bold; padding: 3px;
+}
